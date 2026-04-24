@@ -13,19 +13,16 @@ else:
 print("\nTO TELL ROLE BASED ON YEAR OF EXPERIENCE")
 year_of_experience = float(input("Enter your year of experience: "))
 if year_of_experience <= 2:
-    print("You are eligible for the Juinior Developer role")
-    
+    print("You are eligible for the Juinior Developer role")    
 elif year_of_experience <= 3:
-    print("You are eligible for the Juinior Developer role")
-    
+    print("You are eligible for the Juinior Developer role")    
 elif year_of_experience <= 5:
     print("You are eligible for the Senior Developer role")
-
 elif year_of_experience >= 30:
-    print("You need rest")
-    
+    print("You need rest") 
 else:
     print ("You are eligible for the Project Manager role")
+
     
 print("\n TO TELL BASED ON RACE")
 race = str(input("Enter your race: "))
@@ -38,13 +35,15 @@ elif race == "Asian":
 else:
     print("Get outta here")   
 
-#For loop with array
+
+#for loop for printing streets
 print("\nFOR LOOP WITH ARRAY")
 street = ["Yoni", "Panlap", "Turner Street", "New London", "Church Street", "Kono Spart", "Sina Town", "Hill Station", "Mabanta Road", "Silicon"]
 for st in street:
     print(st)
 
-#Reverse number assignment
+
+#Reverse number assignment wiithou using reverse function
 print("\nPRINTING THE REVERSE OF NUMBERS")
 dNumbers = int(input("Enter numbers: "))
 dNumber_str = str(dNumbers)
@@ -56,7 +55,7 @@ rever_dNumber = int(reversed_str)
 print("Reversed Number: ", rever_dNumber)
 
 
-# Assigment for printing prime numbers
+# Assigment for counting prime numbers in range
 print("\nTO TELL NUMBER OF PRIME NUMBERS BASED ON USER INPUT")
 sasa = int(input("Enter start value: "))
 danga = int(input("Enter end value: "))
@@ -84,15 +83,66 @@ for i in range(1, rows + 1):
         print(fen, end="")
     print()
 
+
 #The reverse triangle pattern
 rowss = 5
 for i in range(rowss, 0, -1):
     for que in range(rowss, i - 1, -1):
         print(que, end="")
     print()
-    
 
-#The Task
+
+#The divisors of an entered number
+print("\nTO PRINT THE DIVISORS OF AN ENTERED NUMBER")
+n = int(input("Enter a number: "))
+print("The divisors of", n, "are:")
+for i in range(1, n + 1):
+    if n % i == 0:
+        print(i)
+  
+        
+#Print total of numbers after input of numbers reaches 0
+print("\nTO PRINT THE TOTAL OF NUMBERS ENTERED AFTER 0 IS ENTERED")
+fenfaq = 0
+while True:
+    numb = int(input("Enter a number (0 to stop): "))
+    if numb == 0:
+        break
+    fenfaq += numb
+print("total is:", fenfaq)
+
+
+#Reverse of numbers using WHILE loop
+print("\nTO PRINT THE REVERSE OF A NUMBER USING WHILE LOOP")
+nums = int(input("Enter a number: "))
+reverse = 0
+while nums > 0:
+    digit = nums % 10
+    reverse = reverse * 10 + digit
+    nums = nums // 10
+print("Reversed number:", reverse)
+
+
+#Count numbers using WHILE loop
+print("\nTO COUNT THE NUMBER OF DIGITS IN A NUMBER USING WHILE LOOP")
+num = int(input("Enter a number: "))
+count = 0
+while num > 0:
+    num = num // 10
+    count += 1
+print("Number of digits:", count)
+
+
+#Multiplication table of a number using a while loop
+print("\nTO PRINT THE MULTIPLICATION TABLE OF A NUMBER USING WHILE LOOP")
+n = int(input("Enter a number: "))
+i = 1
+while i <= 10:
+    print(n, "x", i, "=", n * i)
+    i += 1
+
+
+#The Task for Number Guessing Game
 print("\nNUMBER GUESSING GAME")
 import random
 secret = random.randint(1, 20)
