@@ -75,14 +75,22 @@ for num in range(sasa, danga + 1):
             cont_prime += 1
 print("Total prime numbers between", sasa, "and", danga, "is:", cont_prime)
 
-"""
+
 #Printing Triangle Pattern
 print("\nTO PRINT TRIANGLE PATTERN")
 rows = 5
 for i in range(1, rows + 1):
     for fen in range(1, i + 1):
-        print(fen, end + 1)
-"""
+        print(fen, end="")
+    print()
+
+#The reverse triangle pattern
+rowss = 5
+for i in range(rowss, 0, -1):
+    for que in range(rowss, i - 1, -1):
+        print(que, end="")
+    print()
+    
 
 #The Task
 print("\nNUMBER GUESSING GAME")
