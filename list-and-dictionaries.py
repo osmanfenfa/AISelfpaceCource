@@ -103,8 +103,6 @@ c = copy.copy(a)
 print(a)
 print(b)
 
-
-import copy
 a = [['cat', 'dog'], 'moose']
 b = copy.copy(a)
 c = copy.deepcopy(a)
