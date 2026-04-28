@@ -1,4 +1,4 @@
-"""name = {"name": "Osman", 42: "Answer", "cat": "Caty"}
+name = {"name": "Osman", 42: "Answer", "cat": "Caty"}
 print(name)
 print(list(name.keys()))
 print(list(name.values()))
@@ -23,7 +23,7 @@ name5 = {"name": "Osman"} == {"Osman": "name"}
 print(name5)
 
 name6 = {"password": "1234"} == {"password": "1234"}
-print(name6)"""
+print(name6)
 
 
 spam = {'name': 'Fenfaquee', 'color': 'red'}
